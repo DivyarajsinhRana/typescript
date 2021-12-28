@@ -9,6 +9,7 @@ import Heading from './components/Heading';
 import Oscar from './components/Oscar';
 import Button from './components/Button';
 import Input from './components/Input';
+import Container from './components/Container';
 function App() {
   const person ={
     fn : "Divyarajsinh",
@@ -42,6 +43,7 @@ function App() {
          console.log("button clicked",e,id)
       }} />
       <Input value='' handleChange={(e)=>console.log(e)} /> 
+      <Container  styles={{border:"1px solid black",color:"green"}} />
     </div>
   );
 }
