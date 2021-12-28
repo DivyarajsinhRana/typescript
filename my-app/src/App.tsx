@@ -11,6 +11,7 @@ import Button from './components/Props/Button';
 import Input from './components/Props/Input';
 import Container from './components/Props/Container';
 import {UseState,User} from './components/Hook/UseState';
+import Usereducer from './components/Hook/Usereducer';
 function App() {
   const person ={
     fn : "Divyarajsinh",
@@ -45,8 +46,9 @@ function App() {
       }} />
       <Input value='' handleChange={(e)=>console.log(e)} /> 
       <Container  styles={{border:"1px solid black",color:"green"}} /> */}
-    <UseState/>
-    <User/>
+    {/* <UseState/>
+    <User/> */}
+    <Usereducer />
     </div>
   );
 }
