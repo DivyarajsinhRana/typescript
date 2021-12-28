@@ -1,17 +1,21 @@
 import { type } from 'os'
 import React from 'react'
 
+// defining type props
 type GreetType ={
     name:string,
-    count:number
+    age:number,
+    isLoggedIn:boolean
 }
 
 const Greet = (props:GreetType) => {
     return (
         <div>
-            <h1>Hi {props.name}! you have {props.count} unread messages</h1>
+            {
+                props.isLoggedIn ? (<h1>Hi i am {props.name} , my age {props.age} year</h1>) :
+                (<h1>Welcome guest</h1>)
+            }
         </div>
     )
 }
-
 export default Greet
