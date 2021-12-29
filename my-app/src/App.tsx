@@ -16,6 +16,8 @@ import ThemeContextProvider from './components/Hook/context/ThemeContextProvider
 import Box from './components/Hook/context/Box';
 import UserContextProvider from './components/Hook/context/UserContextProvider';
 import UserData from './components/Hook/context/UserData';
+import DomRef from './components/Hook/Ref/DomRef';
+import MutableRef from './components/Hook/Ref/MutableRef';
 function App() {
   const person ={
     fn : "Divyarajsinh",
@@ -56,10 +58,11 @@ function App() {
     {/* <ThemeContextProvider>
         <Box />
     </ThemeContextProvider> */}
-    <UserContextProvider>
+    {/* <UserContextProvider>
        <UserData/>
-    </UserContextProvider>
-
+    </UserContextProvider> */}
+    <DomRef />
+    <MutableRef/>
     </div>
   );
 }
