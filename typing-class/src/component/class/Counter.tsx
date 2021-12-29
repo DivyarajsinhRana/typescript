@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import  { Component } from 'react'
 
 type countmessageprops ={
     message : string
@@ -20,7 +20,7 @@ type countstatetype = {
         return (
             <div>
                 <button onClick={handleClick}>Increment</button>
-                <p>{this.props.message}{this.state.count}</p>
+                <p>{this.props.message} {this.state.count}</p>
             </div>
         )
     }
