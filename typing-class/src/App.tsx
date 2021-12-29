@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./component/class/Counter"
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-     hello
+    <div>
+      <Counter message="The value of count is"/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
