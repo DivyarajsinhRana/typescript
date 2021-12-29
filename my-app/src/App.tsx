@@ -14,6 +14,8 @@ import {UseState,User} from './components/Hook/UseState';
 import Usereducer from './components/Hook/Usereducer';
 import ThemeContextProvider from './components/Hook/context/ThemeContextProvider';
 import Box from './components/Hook/context/Box';
+import UserContextProvider from './components/Hook/context/UserContextProvider';
+import UserData from './components/Hook/context/UserData';
 function App() {
   const person ={
     fn : "Divyarajsinh",
@@ -51,9 +53,13 @@ function App() {
     {/* <UseState/>
     <User/> */}
     {/* <Usereducer /> */}
-    <ThemeContextProvider>
+    {/* <ThemeContextProvider>
         <Box />
-    </ThemeContextProvider>
+    </ThemeContextProvider> */}
+    <UserContextProvider>
+       <UserData/>
+    </UserContextProvider>
+
     </div>
   );
 }
