@@ -35,7 +35,8 @@ function App() {
  {
   first : "hardik",
   last :"rana"
- }]
+ }
+]
 
   return (
     <div className="App">
