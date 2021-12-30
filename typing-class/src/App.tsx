@@ -5,6 +5,8 @@ import Profile from "./component/class/Auth/Profile"
 import List from "./component/class/Auth/Generic/List"
 import RandomNumber from "./component/class/Restriction/RandomNumber"
 import Toast from "./component/TemplateLiteral/Toast"
+import Button from "./component/HTML/Button"
+import Input from "./component/HTML/Input"
 const data = [{
   id :1,
   first : "premraj",
@@ -28,7 +30,9 @@ const App = () => {
       {/* <Private isLoggedin={false} component={Profile} /> */}
       {/* <List items={data} handleClick={(item)=>console.log(item)} /> */}
       {/* <RandomNumber value={11}  isPositive /> */}
-      <Toast  position="center"/>
+      {/* <Toast  position="center"/> */}
+      <Button variant="primary" onClick={()=> console.log("Hello world")} > primary button</Button>
+      <Input onChange = {(e)=>console.log(e.target.value)}/>
     </div>
   )
 }
