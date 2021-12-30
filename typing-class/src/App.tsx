@@ -7,6 +7,7 @@ import RandomNumber from "./component/class/Restriction/RandomNumber"
 import Toast from "./component/TemplateLiteral/Toast"
 import Button from "./component/HTML/Button"
 import Input from "./component/HTML/Input"
+import CustomComponent from "./component/HTML/CustomComponent"
 const data = [{
   id :1,
   first : "premraj",
@@ -33,6 +34,7 @@ const App = () => {
       {/* <Toast  position="center"/> */}
       <Button variant="primary" onClick={()=> console.log("Hello world")} > primary button</Button>
       <Input onChange = {(e)=>console.log(e.target.value)}/>
+      <CustomComponent  message="My name iss ram"/>
     </div>
   )
 }
