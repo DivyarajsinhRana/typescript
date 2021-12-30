@@ -4,6 +4,7 @@ import Private from "./component/class/Auth/Private"
 import Profile from "./component/class/Auth/Profile"
 import List from "./component/class/Auth/Generic/List"
 import RandomNumber from "./component/class/Restriction/RandomNumber"
+import Toast from "./component/TemplateLiteral/Toast"
 const data = [{
   id :1,
   first : "premraj",
@@ -26,7 +27,8 @@ const App = () => {
       {/* <Counter message="The value of count is"/> */}
       {/* <Private isLoggedin={false} component={Profile} /> */}
       {/* <List items={data} handleClick={(item)=>console.log(item)} /> */}
-      <RandomNumber value={11}  isPositive />
+      {/* <RandomNumber value={11}  isPositive /> */}
+      <Toast  position="center"/>
     </div>
   )
 }
