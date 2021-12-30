@@ -1,5 +1,4 @@
 
-
 type TextOwnProps<E extends React.ElementType> = {
   size?: 'sm' | 'md' | 'lg'
   color?: 'primary' | 'secondary'
